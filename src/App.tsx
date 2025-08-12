@@ -7,14 +7,6 @@ import ContactForm from './ContactForm';
 import type { RouterProps } from './Router';
 import { useEffect } from 'react';
 
-const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-});
-
-const [submitted, setSubmitted] = useState(false);
-
 function App({ setCurrentPage }: RouterProps) {
 
     useEffect(() => {
