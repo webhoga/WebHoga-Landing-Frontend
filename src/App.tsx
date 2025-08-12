@@ -7,8 +7,6 @@ import type { RouterProps } from './Router';
 import { useEffect } from 'react';
 
 function App({ setCurrentPage }: RouterProps) {
-    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-    const [submitted, setSubmitted] = useState(false);
 
     useEffect(() => {
         document.title = "WebHoga - Premium Web Development & Digital Marketing Services | Custom Websites & SEO";
@@ -73,11 +71,13 @@ function App({ setCurrentPage }: RouterProps) {
             document.head.appendChild(metaTag);
         });
 
-        let canonicalLink = document.querySelector('link[rel="canonical"]');
+        let canonicalLink = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+
         if (canonicalLink) {
             canonicalLink.remove();
         }
-        canonicalLink = document.createElement('link');
+
+        canonicalLink = document.createElement('link') as HTMLLinkElement;
         canonicalLink.rel = 'canonical';
         canonicalLink.href = 'https://webhoga.com';
         document.head.appendChild(canonicalLink);
