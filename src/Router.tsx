@@ -28,7 +28,7 @@ const Router = () => {
             case 'real-estate':
                 return <RealEstate currentPage={currentPage} setCurrentPage={setCurrentPage} />;
             case 'online-learning-platform':
-                return <OnlineLearningPlatform currentPage={currentPage} setCurrentPage={setCurrentPage} />;
+                return <OnlineLearningPlatform setCurrentPage={setCurrentPage} />;
             // case 'fitness-wellness':
             //   return <FitnessWellness currentPage={currentPage} setCurrentPage={setCurrentPage} />;
             default:
