@@ -218,30 +218,6 @@ function App({ setCurrentPage }: RouterProps) {
 
     }, []);
 
-    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-
-        if (!formData.name || !formData.email || !formData.message) {
-            alert('All fields are required.');
-            return;
-        }
-
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(formData.email)) {
-            alert('Please enter a valid email address.');
-            return;
-        }
-
-        try {
-            const response = await axios.post('http://localhost:3000/contact', formData);
-            console.log('✅ Form submitted:', response.data);
-            setSubmitted(true);
-        } catch (error) {
-            console.error('❌ Error submitting form:', error);
-            alert('Something went wrong. Please try again later.');
-        }
-    };
-
     return (
         <div className="min-h-screen bg-white">
             {/* Header */}
