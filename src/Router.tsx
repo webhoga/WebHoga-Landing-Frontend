@@ -13,7 +13,7 @@ export interface RouterProps {
 }
 
 const Router = () => {
-    const [currentPage, setCurrentPage] = useState('home');
+    const [currentPage, setCurrentPage] = useState<string>('home');
 
     const renderPage = () => {
         switch (currentPage) {
@@ -30,7 +30,7 @@ const Router = () => {
             case 'online-learning-platform':
                 return <OnlineLearningPlatform currentPage={currentPage} setCurrentPage={setCurrentPage} />;
             // case 'fitness-wellness':
-            //     return <FitnessWellness currentPage={currentPage} setCurrentPage={setCurrentPage} />;
+            //   return <FitnessWellness currentPage={currentPage} setCurrentPage={setCurrentPage} />;
             default:
                 return <App currentPage={currentPage} setCurrentPage={setCurrentPage} />;
         }
