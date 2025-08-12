@@ -1,10 +1,19 @@
 import React from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import Portfolio from './Portfolio.tsx';
 import PricingPlan from './PricingPlan';
 import ContactForm from './ContactForm';
 import type { RouterProps } from './Router';
 import { useEffect } from 'react';
+
+const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+});
+
+const [submitted, setSubmitted] = useState(false);
 
 function App({ setCurrentPage }: RouterProps) {
 
