@@ -268,78 +268,67 @@ const OnlineLearningPlatform = ({ setCurrentPage }) => {
             </div>
 
             {/* Newsletter Section */}
-            <div className="py-16 px-6 bg-gradient-to-r from-blue-600 to-indigo-700">
-                <div className="container mx-auto text-center">
-                    <h2 className="text-3xl font-bold text-white mb-4">Stay Ahead of the Curve</h2>
-                    <p className="text-blue-100 mb-8 max-w-2xl mx-auto">
-                        Subscribe to our newsletter and get the latest courses, learning tips, and exclusive discounts delivered straight to your inbox.
-                    </p>
-                    <div className="flex max-w-md mx-auto">
+            <div className="py-16 px-6 bg-gradient-to-r from-indigo-700 to-blue-600 text-white">
+                <div className="container mx-auto max-w-3xl text-center">
+                    <h2 className="text-3xl font-bold mb-4">Stay Updated with EduMaster</h2>
+                    <p className="mb-8 text-lg">Subscribe to our newsletter to get the latest courses and promotions.</p>
+                    <form className="flex flex-col sm:flex-row justify-center items-center gap-4">
                         <input
                             type="email"
-                            placeholder="Enter your email address"
-                            className="flex-1 px-6 py-4 rounded-l-full focus:outline-none focus:ring-2 focus:ring-blue-300"
+                            placeholder="Enter your email"
+                            className="w-full sm:w-auto px-6 py-3 rounded-full text-gray-800 font-semibold focus:outline-none"
                         />
-                        <button className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-r-full hover:bg-blue-50 transition-colors">
+                        <button
+                            type="submit"
+                            className="bg-white text-blue-700 font-semibold px-8 py-3 rounded-full hover:bg-blue-50 transition-colors"
+                        >
                             Subscribe
                         </button>
-                    </div>
-                    <p className="text-blue-200 text-sm mt-4">Join 25,000+ learners already subscribed</p>
+                    </form>
                 </div>
             </div>
 
             {/* Footer */}
-            <footer className="bg-gray-900 text-white py-12 px-6">
-                <div className="container mx-auto">
-                    <div className="grid md:grid-cols-4 gap-8">
-                        <div>
-                            <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
-                                EduMaster
-                            </h3>
-                            <p className="text-gray-400">Empowering minds through quality education and innovative learning experiences.</p>
-                            <div className="flex space-x-4 mt-4">
-                                <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 cursor-pointer transition-colors">
-                                    <span className="text-sm font-bold">f</span>
-                                </div>
-                                <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 cursor-pointer transition-colors">
-                                    <span className="text-sm font-bold">t</span>
-                                </div>
-                                <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 cursor-pointer transition-colors">
-                                    <span className="text-sm font-bold">in</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h4 className="font-semibold mb-4">Categories</h4>
-                            <ul className="space-y-2 text-gray-400">
-                                <li><a href="#" className="hover:text-blue-400 transition-colors">Web Development</a></li>
-                                <li><a href="#" className="hover:text-blue-400 transition-colors">Data Science</a></li>
-                                <li><a href="#" className="hover:text-blue-400 transition-colors">Design</a></li>
-                                <li><a href="#" className="hover:text-blue-400 transition-colors">Marketing</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 className="font-semibold mb-4">Support</h4>
-                            <ul className="space-y-2 text-gray-400">
-                                <li><a href="#" className="hover:text-blue-400 transition-colors">Help Center</a></li>
-                                <li><a href="#" className="hover:text-blue-400 transition-colors">Student Support</a></li>
-                                <li><a href="#" className="hover:text-blue-400 transition-colors">Become Instructor</a></li>
-                                <li><a href="#" className="hover:text-blue-400 transition-colors">Affiliate Program</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 className="font-semibold mb-4">Company</h4>
-                            <ul className="space-y-2 text-gray-400">
-                                <li><a href="#" className="hover:text-blue-400 transition-colors">About Us</a></li>
-                                <li><a href="#" className="hover:text-blue-400 transition-colors">Careers</a></li>
-                                <li><a href="#" className="hover:text-blue-400 transition-colors">Press</a></li>
-                                <li><a href="#" className="hover:text-blue-400 transition-colors">Privacy Policy</a></li>
-                            </ul>
+            <footer className="bg-gray-800 text-gray-300 py-10">
+                <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 className="text-white font-bold mb-4 text-xl">EduMaster</h3>
+                        <p className="text-gray-400 max-w-xs">
+                            Empowering you with the skills for tomorrow's jobs. Learn anywhere, anytime.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 className="text-white font-semibold mb-4">Quick Links</h4>
+                        <ul className="space-y-2">
+                            <li><a href="#" className="hover:text-white transition-colors">Courses</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors">Learning Paths</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors">Instructors</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className="text-white font-semibold mb-4">Follow Us</h4>
+                        <div className="flex space-x-4 text-gray-400">
+                            <a href="#" className="hover:text-white transition-colors" aria-label="Facebook">
+                                <svg fill="currentColor" className="w-6 h-6" viewBox="0 0 24 24">
+                                    <path d="M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54v-2.89h2.54v-2.204c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.987C18.343 21.128 22 16.991 22 12z" />
+                                </svg>
+                            </a>
+                            <a href="#" className="hover:text-white transition-colors" aria-label="Twitter">
+                                <svg fill="currentColor" className="w-6 h-6" viewBox="0 0 24 24">
+                                    <path d="M23 3a10.9 10.9 0 01-3.14.86 4.48 4.48 0 001.98-2.48 9.14 9.14 0 01-2.88 1.1 4.52 4.52 0 00-7.7 4.12 12.79 12.79 0 01-9.29-4.7 4.49 4.49 0 001.4 6.04 4.48 4.48 0 01-2.05-.56v.06a4.52 4.52 0 003.62 4.43 4.52 4.52 0 01-2.04.08 4.52 4.52 0 004.22 3.14A9.05 9.05 0 013 19.54a12.82 12.82 0 006.92 2.03c8.31 0 12.85-6.89 12.85-12.85 0-.2 0-.39-.01-.58A9.22 9.22 0 0023 3z" />
+                                </svg>
+                            </a>
+                            <a href="#" className="hover:text-white transition-colors" aria-label="LinkedIn">
+                                <svg fill="currentColor" className="w-6 h-6" viewBox="0 0 24 24">
+                                    <path d="M16 8a6 6 0 016 6v6h-4v-6a2 2 0 00-4 0v6h-4v-12h4v2zM6 9H2v12h4V9zm-2-3a2 2 0 110-4 2 2 0 010 4z" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                    <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                        <p>© 2025 EduMaster. Created by WebHoga - All rights reserved.</p>
-                    </div>
+                </div>
+                <div className="text-center text-gray-500 mt-8 text-sm">
+                    &copy; 2025 EduMaster. All rights reserved.
                 </div>
             </footer>
         </div>
