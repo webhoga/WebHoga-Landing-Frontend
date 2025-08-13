@@ -5,6 +5,9 @@ import type { RouterProps } from './Router';
 import { useEffect } from 'react';
 
 function App({ setCurrentPage }: RouterProps) {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     useEffect(() => {
         document.title = "WebHoga - Premium Web Development & Digital Marketing Services | Custom Websites & SEO";
