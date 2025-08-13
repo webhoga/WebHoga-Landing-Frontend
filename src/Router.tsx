@@ -9,7 +9,7 @@ import OnlineLearningPlatform from './projects/OnlineLearningPlatform';
 
 export interface RouterProps {
     currentPage?: string;
-    setCurrentPage: (page: string) => void;
+    setCurrentPage?: (page: string) => void;
 }
 
 const Router = () => {
