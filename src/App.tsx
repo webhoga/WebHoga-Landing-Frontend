@@ -191,7 +191,7 @@ function App({ setCurrentPage }: RouterProps) {
             ]
         };
 
-        let existingScript = document.querySelector('script[type="application/ld+json"]');
+        const existingScript = document.querySelector('script[type="application/ld+json"]');
         if (existingScript) {
             existingScript.remove();
         }
