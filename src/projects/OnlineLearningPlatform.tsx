@@ -1,4 +1,5 @@
 interface OnlineLearningPlatformProps {
+    currentPage: string;
     setCurrentPage: (page: string) => void;
 }
 
