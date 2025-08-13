@@ -615,7 +615,7 @@ function App({ currentPage, setCurrentPage }: RouterProps) {
 
             {/* Portfolio */}
             <section id="portfolio">
-                <Portfolio currentPage={currentPage} setCurrentPage={setCurrentPage} />
+                <Portfolio setCurrentPage={setCurrentPage} />
             </section>
 
             {/* Pricing */}

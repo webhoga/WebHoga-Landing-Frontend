@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import type { RouterProps } from './Router';
 
-const Portfolio = ({ currentPage, setCurrentPage }: RouterProps) => {
+const Portfolio = ({ setCurrentPage }: RouterProps) => {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const mockups = [
