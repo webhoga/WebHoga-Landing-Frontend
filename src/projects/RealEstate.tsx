@@ -48,7 +48,7 @@ const RealEstate = ({ setCurrentPage }: RouterProps) => {
                     <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-4">
                             <button
-                                onClick={() => setCurrentPage('home')}
+                                onClick={() => setCurrentPage && setCurrentPage('home')}
                                 className="text-gray-600 hover:text-green-600 transition-colors"
                             >
                                 ← Back to Portfolio
