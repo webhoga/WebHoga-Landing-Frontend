@@ -65,7 +65,7 @@ const Portfolio = ({ setCurrentPage }: RouterProps) => {
     const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % mockups.length);
     const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + mockups.length) % mockups.length);
     const goToSlide = (index: number) => setCurrentSlide(index);
-    const handleViewProject = (route: string) => setCurrentPage(route);
+    const handleViewProject = (route: string) => setCurrentPage?.(route);
 
     return (
         <div className="py-20 px-6 bg-white">
