@@ -307,7 +307,7 @@ function App({ setCurrentPage }: RouterProps) {
                             {/* Stats Section */}
                             <div className="flex justify-center lg:justify-start space-x-12 pt-12">
                                 <div className="text-center group cursor-pointer">
-                                    <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">50+</div>
+                                    <div className="text-4xl md:text-5xl font-black bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent group-hover:scale-110 transition-transform duration-300">500+</div>
                                     <div className="text-base text-gray-600 font-semibold mt-2">Projects Delivered</div>
                                 </div>
                                 <div className="text-center group cursor-pointer">
