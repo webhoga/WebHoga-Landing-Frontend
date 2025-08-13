@@ -1,6 +1,8 @@
-import React from 'react';
+interface OnlineLearningPlatformProps {
+    setCurrentPage: (page: string) => void;
+}
 
-const OnlineLearningPlatform = ({ setCurrentPage }) => {
+const OnlineLearningPlatform = ({ setCurrentPage }: OnlineLearningPlatformProps) => {
     const courses = [
         {
             id: 1,
