@@ -8,7 +8,7 @@ import OnlineLearningPlatform from './projects/OnlineLearningPlatform';
 // import FitnessWellness from './projects/FitnessWellness';
 
 export interface RouterProps {
-    currentPage: string;
+    currentPage?: string;
     setCurrentPage: (page: string) => void;
 }
 
