@@ -181,14 +181,19 @@ const Portfolio = ({ setCurrentPage }: RouterProps) => {
                 </div>
 
                 {/* Stats */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+                <div className="flex justify-center gap-6 mt-16">
                     {[
                         ["500+", "Projects Completed"],
                         ["98%", "Client Satisfaction"],
                         ["24/7", "Support Available"]
                     ].map(([num, label]) => (
-                        <div className="text-center bg-white border border-green-200 rounded-xl p-4 hover:border-violet-200 transition-colors duration-300" key={label}>
-                            <div className="text-3xl font-bold bg-gradient-to-r from-green-600 to-violet-600 bg-clip-text text-transparent mb-2">{num}</div>
+                        <div
+                            key={label}
+                            className="text-center bg-white border border-green-200 rounded-xl p-4 hover:border-violet-200 transition-colors duration-300 w-40"
+                        >
+                            <div className="text-3xl font-bold bg-gradient-to-r from-green-600 to-violet-600 bg-clip-text text-transparent mb-2">
+                                {num}
+                            </div>
                             <div className="text-gray-600">{label}</div>
                         </div>
                     ))}

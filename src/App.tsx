@@ -627,7 +627,7 @@ function App({ setCurrentPage }: RouterProps) {
             {/* Contact */}
             <ContactForm />
 
-            {/* Call Us / Reach Out Section */}
+            {/* Reach Out Section */}
             <div className="py-16 px-6 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
                 <div className="container mx-auto max-w-4xl">
                     <div className="text-center mb-12">
