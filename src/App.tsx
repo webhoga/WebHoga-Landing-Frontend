@@ -685,7 +685,7 @@ function App({ setCurrentPage }: RouterProps) {
                         <div className="inline-flex items-center px-8 py-4 bg-white/80 backdrop-blur-lg rounded-2xl border border-gray-200/50 shadow-lg">
                             <div className="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></div>
                             <span className="text-gray-800 font-semibold">
-                                Response time: Within 2 days business days
+                                Response time: Within 2 business days
                             </span>
                         </div>
                     </div>
@@ -695,7 +695,7 @@ function App({ setCurrentPage }: RouterProps) {
             {/* Footer */}
             <div className="py-8 px-6 border-t border-gray-200 bg-white">
                 <div className="container mx-auto text-center">
-                    <p className="text-black">© 2025 WebHoga Digital Services. Crafted in India, Loved Globally .</p>
+                    <p className="text-black">© 2026 WebHoga Digital Services. Crafted in India, Loved Globally.</p>
                 </div>
             </div>
         </div>
