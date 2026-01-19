@@ -226,7 +226,7 @@ function App({ setCurrentPage }: RouterProps) {
                     <div className="flex items-center justify-between">
                         <div className="flex items-center">
                             <img
-                                src="https://webhoga.com/assets/7FCSPIji-WebHoga%20Logo.png"
+                                src="https://blog.webhoga.com/wp-content/uploads/2026/01/WebHoga-Logo.png"
                                 alt="WebHoga Logo"
                                 className="h-16 mr-3"
                             />
