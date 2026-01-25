@@ -1,5 +1,4 @@
 import Portfolio from './Portfolio.tsx';
-import PricingPlan from './PricingPlan';
 import ContactForm from './ContactForm';
 import type { RouterProps } from './Router';
 import { useEffect } from 'react';
@@ -620,9 +619,6 @@ function App({ setCurrentPage }: RouterProps) {
             <section id="portfolio">
                 <Portfolio setCurrentPage={setCurrentPage} />
             </section>
-
-            {/* Pricing */}
-            <PricingPlan />
 
             {/* Contact */}
             <ContactForm />
